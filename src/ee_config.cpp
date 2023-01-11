@@ -36,7 +36,7 @@ namespace dmHelper
 	template <typename T>
 	bool EepromConfig<T>::save()
 	{
-		EEPROM.put(0, &m_ver);
+		EEPROM.put(0, m_ver);
 		EEPROM.put<T>(2, data);
 		bool r = EEPROM.commit();
 		if (r)
