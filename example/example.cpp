@@ -7,6 +7,6 @@
 using namespace dmHelper;
 
 // ...
-// use is very simple - see methods of individual classes in header files
+// use is very simple - see methods in header files
 // ...
 

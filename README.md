@@ -18,4 +18,7 @@ There are several useful classes that can be used in different solutions
 > - tracks value change
 > - monitors timeout
 
+**Temp** *(more special than general use)*
+> A specialization of the `Vval` class for handling temperature in 16T10 format and supporting communication with temperature sensors.
+
 *More will be added* :-)
