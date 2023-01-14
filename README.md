@@ -11,7 +11,7 @@ There are several useful classes that can be used in different solutions
 > Queue with specified maximum length - older records are dropped
 
 **LedSig**
-> Simple non-blinking control of LED signaling. Automatic update of all existing instances.
+> Simple control of LED signaling. Automatic update of all existing instances.
 
 **Vval**
 > Class to store a value along with information about its validity
