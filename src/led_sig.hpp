@@ -1,16 +1,13 @@
 #ifndef _led_sig_h
 #define _led_sig_h
 
+#include <Arduino.h>
 #include <stdint.h>
 #include <vector>
 
-extern unsigned long millis();
-extern void pinMode(uint8_t pin, uint8_t mode);
-extern void digitalWrite(uint8_t pin, uint8_t val);
-
 namespace dmHelper
 {
-    // Simple non-blinking control of LED signaling
+    // Simple control for led indicator
 	class LedSig
 	{
 	public:
@@ -37,9 +34,9 @@ namespace dmHelper
 		bool m_on = false;
 
 		void update();
-    	static std::vector<LedSig *> instances;
+    	static std::vector<LedSig*> instances;
 	};
-	std::vector<LedSig *> LedSig::instances;
+
 }
 
 #endif

@@ -1,5 +1,5 @@
-#ifndef hnet_link_h
-#define hnet_link_h
+#ifndef _fixedqueue_link_h
+#define _fixedqueue_link_h
 
 #include <queue>
 #include <functional>
@@ -14,17 +14,13 @@ namespace dmHelper
 		// pushes into queue
 		void push(const T &value)
 		{
-			if (this->size() == limit)
-			{
-				this->c.pop_front();
-			}
+			if (this->size() == limit) this->c.pop_front();
 			std::queue<T, Container>::push(value);
 		};
 		// clears queue
 		void clear()
 		{
-			while (!this->c.empty())
-				this->c.pop_front();
+			while (!this->c.empty()) this->c.pop_front();
 		}
 	};
 }

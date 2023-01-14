@@ -3,9 +3,9 @@
 #include <vector>
 #include "led_sig.hpp"
 
-extern unsigned long millis();
-extern void pinMode(uint8_t pin, uint8_t mode);
-extern void digitalWrite(uint8_t pin, uint8_t val);
+// extern unsigned long millis();
+// extern void pinMode(uint8_t pin, uint8_t mode);
+// extern void digitalWrite(uint8_t pin, uint8_t val);
 
 namespace dmHelper
 {
@@ -63,5 +63,5 @@ namespace dmHelper
 				m_t += millis();
 		}
 	}
-
+	std::vector<LedSig*> LedSig::instances;
 };

@@ -5,9 +5,9 @@
 #include "temp.hpp"
 
 #define UNDEF16T10 9999
+
 namespace dmHelper
 {
-
 	void Temp::update(uint8_t msb, uint8_t lsb)
 	{
 		m_msbLast = msb;
